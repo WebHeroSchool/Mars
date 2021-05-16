@@ -14,30 +14,51 @@
   display: flex;
   justify-content: space-between;
 }
-.logo {
-  padding: 40px 0;
-}
 .menu {
-  font-family: Roboto;
   display: flex;
   align-items: center;
 }
 .menu__item {
-  padding: 0 13px;
-  border: dashed 1px red;
+  position: relative;
+  margin-right: 27px;
+  font: 18px/21px Roboto, arial, helvetica, sans-serif;
+  color: #000;
+  text-decoration: none;
+  transition: opacity .5s;
 }
 .menu__item:last-child {
   padding-right: 0:
-}
-.logo {
-  font-family: pt_serifregular, arial, helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 31px;
 }
 .main-content__subtitle {
    font-family: Roboto;
 }
 .main-content__button {
    font-family: Roboto;
+}
+.logo {
+  position: relative;
+  padding: 40px 0px;
+  padding-left: 44px; 
+  font-family: pt_serifregular, arial, helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+}
+.logo__circle {
+  position: absolute;
+  left: 0;
+  top: 50%; 
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  opacity: .7;
+}
+.logo__circle_color_blue {
+  left: 8px;
+  top: 56%;
+  background: #C8DBFB;
+}
+.logo__circle_color_dark-blue {
+  background: #0056EC;
 }
